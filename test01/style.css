@@ -1,4 +1,8 @@
-body { background-color:yellow; }
+body { background-color:white; }
 p { color:blue; }
 table.generated { background-color:grey; }
 table.generated td.heading { background-color:blue; }
+
+#demo { background-color:yellow; }
+.frame{ background-color:blue; }
+
