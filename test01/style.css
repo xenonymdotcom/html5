@@ -1,0 +1,4 @@
+body { background-color:yellow; }
+p { color:blue; }
+table.generated { background-color:grey; }
+table.generated td.heading { background-color:blue; }
