@@ -6,3 +6,7 @@ table.generated td.heading { background-color:blue; }
 #demo { background-color:yellow; }
 .frame{ background-color:blue; }
 
+table.emulator { background-color:white; }
+table.emulator td.screen { background-color:green; }
+
+

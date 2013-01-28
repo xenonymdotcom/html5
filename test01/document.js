@@ -27,10 +27,23 @@ function generate_table()
   generate_junk_table();
 
   // generate the table I want with an image in it
-	document.write('<table class="generated"><tr>');
-		document.write('<td class="heading"><img src="frame.png" alt="320x256 test image" /></td>');
+	document.write('<table class="emulator"><tr>');
+		document.write('<td class="screen"><canvas id="vdu" width="320" height="256"></canvas></td>');
 	document.write('</tr></table>');
 }
 
-// now create the table;
-generate_table()
+function init_screen()
+{
+  var c=document.getElementById("vdu");
+  var ctx=c.getContext("2d");
+  ctx.fillStyle="#FF0000";
+  ctx.fillRect(0,0,150,75);
+  ctx.beginPath();
+  ctx.arc(95,50,40,0,2*Math.PI);
+  ctx.stroke();
+}
+
+// now create the table ...
+generate_table();
+// and init the screen.
+init_screen();
