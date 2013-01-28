@@ -1,6 +1,5 @@
 
-
-function generate_table()
+function generate_junk_table()
 {
 	document.write('<table class="generated"><tr>');
 		document.write('<td class="heading">Status</td>');
@@ -18,6 +17,18 @@ function generate_table()
 		document.write('<td>');
 			createParagraph();
 		document.write('</td>');
+	document.write('</tr></table>');
+}
+
+
+function generate_table()
+{
+  // my playing about table ...
+  generate_junk_table();
+
+  // generate the table I want with an image in it
+	document.write('<table class="generated"><tr>');
+		document.write('<td class="heading"><img src="frame.png" alt="320x256 test image" /></td>');
 	document.write('</tr></table>');
 }
 
